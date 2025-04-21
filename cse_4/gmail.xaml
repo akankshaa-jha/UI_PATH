@@ -1,0 +1,362 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="gmail" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="gmail_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="gmail" sap:VirtualizedContainerService.HintSize="1244,3937" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,3914" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,3674" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Use another account''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.google.com/InteractiveLogin/signinchooser" CVScreenId="f0e4b171-4d7d-458b-b117-b5cc6f621272" ContentHash="BIHH8hKydEmvQkrZE1r5BQ" CvTextArea="1031, 624, 159, 14" CvTextArgument="Use another account" CvType="Text" DesignTimeRectangle="976, 606, 492, 52" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aria-role='link' idx='3' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='link' type='' tag='DIV' class='VV3oRb YZVTmd SmR8' aaname='' check:innerText='Use another account' /&gt;" Guid="664f82e9-d781-4124-8345-3345ee4ebe44" InformativeScreenshot="cae1c6825853709c8ac5c56a314a62ed.png" Reference="6YU48RMUAUGQL_sulEpGdQ/PHZncpz05k2LiZFJGxjXlQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''INPUT identifierId''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Text="hello@gmail.com" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.google.com/v3/signin/identifier" ContentHash="2DBX7aNQVUOA4_pVFyNBOg" DesignTimeRectangle="994, 479, 456, 52" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' type='email' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="2b460b75-b3bb-4108-81ed-f8d2fb216144" InformativeScreenshot="a13c45123c1669ccdf2c7f4334196636.png" Reference="6YU48RMUAUGQL_sulEpGdQ/9f9ezpiYbEys3C5odz7h3g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,264" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Shortcuts="[d(hk)][k(enter)][u(hk)][d(hk)][k(left)][u(hk)][d(hk)][k(left)][u(hk)][d(hk)][k(left)][u(hk)][d(hk)][k(left)][u(hk)]" Version="V4">
+              <uix:NKeyboardShortcuts.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NKeyboardShortcuts.VerifyOptions>
+            </uix:NKeyboardShortcuts>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''INPUT identifierId''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Text="shruti@gmail.com" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.google.com/v3/signin/identifier" ContentHash="2DBX7aNQVUOA4_pVFyNBOg" DesignTimeRectangle="994, 479, 456, 52" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' type='email' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="2b460b75-b3bb-4108-81ed-f8d2fb216144" InformativeScreenshot="a13c45123c1669ccdf2c7f4334196636.png" Reference="6YU48RMUAUGQL_sulEpGdQ/9f9ezpiYbEys3C5odz7h3g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+              <uix:NKeyboardShortcuts.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NKeyboardShortcuts.VerifyOptions>
+            </uix:NKeyboardShortcuts>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Right-click ''INPUT''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.google.com/v3/signin/challenge/pwd" ContentHash="nBY584NH6kaYCjWitjvRpw" DesignTimeRectangle="994, 528, 456, 52" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="b8b572d7-a859-4d2d-847c-a9acebef81d1" InformativeScreenshot="b77b5c9bbcef045ee0e1277a098674b3.png" Reference="6YU48RMUAUGQL_sulEpGdQ/WfFeK4pFlEGojlhKdtNL3A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''INPUT''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" IsPassword="True" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Text="abc@1234" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.google.com/v3/signin/challenge/pwd" ContentHash="nBY584NH6kaYCjWitjvRpw" DesignTimeRectangle="994, 528, 456, 52" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="b8b572d7-a859-4d2d-847c-a9acebef81d1" InformativeScreenshot="b77b5c9bbcef045ee0e1277a098674b3.png" Reference="6YU48RMUAUGQL_sulEpGdQ/WfFeK4pFlEGojlhKdtNL3A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''DIV''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.google.com/v3/signin/challenge/pwd" CVScreenId="8584fa00-e930-4e7c-b455-adf9eaccb0cc" ContentHash="eJetedOAT0CRRA8TkqqxVQ" CvElementArea="1372, 676, 82, 44" CvTextArea="1396, 691, 33, 13" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1373, 674, 79, 48" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='VfPpkd-RLmnJb' parentid='passwordNext' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='VfPpkd-RLmnJb' parentid='passwordNext' tag='DIV' type='' aaname='' /&gt;" Guid="b925c3ed-dea6-4938-ba43-a596e7c31e7d" InformativeScreenshot="f8c1c13c95859af6364c97eb384b55d4.png" Reference="6YU48RMUAUGQL_sulEpGdQ/6VhmUB0raUeD6Yl0cCQT7g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Forgot password?''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.google.com/v3/signin/challenge/pwd" CVScreenId="8584fa00-e930-4e7c-b455-adf9eaccb0cc" ContentHash="IWNT23Bne0KVGkNL1aJ0ow" CvTextArea="1215, 690, 118, 17" CvTextArgument="Forgot password?" CvType="Text" DesignTimeRectangle="1216, 697, 117, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='forgotPassword' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='forgotPassword' tag='SPAN' type='' class='VfPpkd-vQzf8d' aaname='Forgot password?' check:innerText='Forgot password?' /&gt;" Guid="c072837e-49b1-4737-b794-c09ca415d033" InformativeScreenshot="c580e6604ee94ae083071953bdd254c6.png" Reference="6YU48RMUAUGQL_sulEpGdQ/LpquyiQId0K0C09Xgbf1tg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="8584fa00-e930-4e7c-b455-adf9eaccb0cc" CvTextArea="1215, 690, 118, 17" CvTextArgument="Forgot password?" CvType="Text" DesignTimeRectangle="1200, 687, 149, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='forgotPassword' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='forgotPassword' tag='BUTTON' type='button' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-dgl2Hf ksBjEc lKxP2d LQeN7 BqKGqe eR0mzb TrZEUc lw1w4b' aaname='Forgot password?' check:innerText='Forgot password?' /&gt;" Guid="2a060581-0ba1-4c6a-8f50-b31fc2b214d0" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''DIV''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.google.com/v3/signin/challenge/kpp" CVScreenId="8584fa00-e930-4e7c-b455-adf9eaccb0cc" ContentHash="pypGzWKLSk2gMZVavZPEVA" CvElementArea="993, 591, 21, 21" CvTextArea="1031, 595, 38, 13" CvTextArgument="Show" CvType="CheckBox" DesignTimeRectangle="992, 561, 84, 48" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;span&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' isleaf='1' parentid='countryList' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='countryList' tag='DIV' class='VfPpkd-aPP78e' aaname='' /&gt;" Guid="59fb43c3-6bbe-4df1-a48e-ab7151429400" InformativeScreenshot="2a94311bbc5ac3b3afc30e721fc38204.png" Reference="6YU48RMUAUGQL_sulEpGdQ/Aj-6KvKAzkSZn4TvFc9EZQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''India (+91)''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.google.com/v3/signin/challenge/kpp" CVScreenId="4e32aa34-da05-4eea-80a6-c0b3334158ee" ContentHash="rwGTF7iNN0q6Ntlquu37Kw" CvTextArea="1039, 801, 79, 18" CvTextArgument="India (+91)" CvType="Text" DesignTimeRectangle="1039, 801, 79, 18" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl aria-role='option' idx='101' tabindex='-1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='option' type='' tabindex='-1' tag='LI' class='MCs1Pd UbEQCe VfPpkd-OkbHre VfPpkd-OkbHre-SfQLQb-M1Soyc-bN97Pc VfPpkd-aJasdd-RWgCYc-wQNmvb VfPpkd-rymPhb-ibnC6b VfPpkd-rymPhb-ibnC6b-OWXEXe-SfQLQb-M1Soyc-Bz112c VfPpkd-rymPhb-ibnC6b-OWXEXe-SfQLQb-Woal0c-RWgCYc' aaname='' check:innerText='India (+91)' /&gt;" Guid="ef3498c0-5ca1-46a7-af0a-472ebc47c52e" InformativeScreenshot="ec26dadd020efd859424d6f85b51ad5a.png" Reference="6YU48RMUAUGQL_sulEpGdQ/3b8aKCqTcUmRiIqYJqD-EQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Phone number''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.google.com/v3/signin/challenge/kpp" CVScreenId="c7e8f1e3-28f8-4336-bd36-e4b71e960bc5" ContentHash="l1GPe05nQ0yluHE2ej9wMA" CvElementArea="1075, 556, 378, 58" CvType="InputBox" DesignTimeRectangle="1088, 557, 88, 56" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;span&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;span&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='VfPpkd-NSFCdd-Ra9xwd' tag='SPAN' aaname='' check:innerText='Phone number' /&gt;" Guid="4b03393c-d234-43e2-9584-9c5d6d19b0c5" InformativeScreenshot="5af52ee7b222e06340b66c23c08deeb8.png" Reference="6YU48RMUAUGQL_sulEpGdQ/42J_xvBaKECo0VqcSrQAUA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Phone number''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.google.com/v3/signin/challenge/kpp" CVScreenId="c7e8f1e3-28f8-4336-bd36-e4b71e960bc5" ContentHash="WGLUEcABb0a1bC7yxH_xrA" CvElementArea="1075, 556, 378, 58" CvType="InputBox" DesignTimeRectangle="1176, 557, 276, 56" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='VfPpkd-NSFCdd-MpmGFe' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;span&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;span&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='VfPpkd-NSFCdd-MpmGFe' type='' tag='SPAN' aaname='' /&gt;" Guid="8bcf1251-c7ab-4ee4-81b7-e06b257d7d6c" InformativeScreenshot="99929cc36f15797d5880aa30a3a3b3c4.png" Reference="6YU48RMUAUGQL_sulEpGdQ/YS5L9Z1iQUy6JqwEt9cUuQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="c7e8f1e3-28f8-4336-bd36-e4b71e960bc5" CvElementArea="1075, 556, 378, 58" CvType="InputBox" DesignTimeRectangle="1088, 557, 88, 56" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;span&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;span&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='VfPpkd-NSFCdd-Ra9xwd' tag='SPAN' aaname='' check:innerText='Phone number' /&gt;" Guid="15a0ed64-aef4-42ef-8fc4-e96ac84dd5d1" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Phone number''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.google.com/v3/signin/challenge/kpp" CVScreenId="c7e8f1e3-28f8-4336-bd36-e4b71e960bc5" ContentHash="WGLUEcABb0a1bC7yxH_xrA" CvElementArea="1075, 556, 378, 58" CvType="InputBox" DesignTimeRectangle="1176, 557, 276, 56" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='VfPpkd-NSFCdd-MpmGFe' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;span&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;span&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='VfPpkd-NSFCdd-MpmGFe' type='' tag='SPAN' aaname='' /&gt;" Guid="8bcf1251-c7ab-4ee4-81b7-e06b257d7d6c" InformativeScreenshot="99929cc36f15797d5880aa30a3a3b3c4.png" Reference="6YU48RMUAUGQL_sulEpGdQ/YS5L9Z1iQUy6JqwEt9cUuQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="c7e8f1e3-28f8-4336-bd36-e4b71e960bc5" CvElementArea="1075, 556, 378, 58" CvType="InputBox" DesignTimeRectangle="1088, 557, 88, 56" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;span&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;span&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='VfPpkd-NSFCdd-Ra9xwd' tag='SPAN' aaname='' check:innerText='Phone number' /&gt;" Guid="15a0ed64-aef4-42ef-8fc4-e96ac84dd5d1" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Phone number''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8b8f8c8-b381-4407-824c-e84f705dd6e7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="accounts.google.com/v3/signin/challenge/kpp" CVScreenId="c7e8f1e3-28f8-4336-bd36-e4b71e960bc5" ContentHash="WGLUEcABb0a1bC7yxH_xrA" CvElementArea="1075, 556, 378, 58" CvType="InputBox" DesignTimeRectangle="1176, 557, 276, 56" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='VfPpkd-NSFCdd-MpmGFe' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;span&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;span&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='VfPpkd-NSFCdd-MpmGFe' type='' tag='SPAN' aaname='' /&gt;" Guid="8bcf1251-c7ab-4ee4-81b7-e06b257d7d6c" InformativeScreenshot="99929cc36f15797d5880aa30a3a3b3c4.png" Reference="6YU48RMUAUGQL_sulEpGdQ/YS5L9Z1iQUy6JqwEt9cUuQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="c7e8f1e3-28f8-4336-bd36-e4b71e960bc5" CvElementArea="1075, 556, 378, 58" CvType="InputBox" DesignTimeRectangle="1088, 557, 88, 56" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;span&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;span&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='VfPpkd-NSFCdd-Ra9xwd' tag='SPAN' aaname='' check:innerText='Phone number' /&gt;" Guid="15a0ed64-aef4-42ef-8fc4-e96ac84dd5d1" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="d7cfaf3b0f427d8ea3697ed6d43078fd.png" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Url="chrome://newtab/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

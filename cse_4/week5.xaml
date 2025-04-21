@@ -1,0 +1,688 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="week5" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="week5_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="week5" sap:VirtualizedContainerService.HintSize="1244,8778" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,298" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="94838293-8fbd-4b5c-aec2-ce7c94182214">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1212" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" IsDisplayNameAuto="True" ScopeGuid="55895c2f-1130-4df5-b463-33ec260e9916" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,913" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''notepad.exe Untitled - …''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="55895c2f-1130-4df5-b463-33ec260e9916" Text="hello , welcome to rpa lab" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="1OUCn2jGO0SNAtBk02XiAQ" DesignTimeRectangle="6, 73, 1924, 937" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="4caaabb9-6cb6-4451-ad01-222b0e558c62" InformativeScreenshot="485eb82678ddc0767bff042b900ccd1f.png" Reference="6YU48RMUAUGQL_sulEpGdQ/dSivY3AWwUuSNinOpyo7vw" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="9, 73, 753, 386" Guid="1a2e21ce-3b96-442c-863a-5b9c1d1a32f4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAvEAAAGCCAYAAABpZpwTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAemSURBVHhe7dZBDQAwEAShuln/Cq86JuGBB962AwAAOiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABiJB4AAGIkHgAAYiQeAABSdh8KNjsXM+CpfAAAAABJRU5ErkJggg==" SearchSteps="Image" TargetType="ImageBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''notepad.exe *hello ,wel…''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="55895c2f-1130-4df5-b463-33ec260e9916" Text="welcome to rpa lab" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" ContentHash="WAeXq8iv7Ee9ygdZ7_nimg" CvTextArea="20, 90, 130, 20" CvTextArgument="hello ,welcome" CvType="Text" DesignTimeRectangle="6, 73, 1924, 937" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="0abd7741-5223-4595-b977-db2a817ee160" InformativeScreenshot="c0b9b91dc1ea196ac53bd1dae6e61496.png" Reference="6YU48RMUAUGQL_sulEpGdQ/1X2Xod6CikuKFQ6x90VcDQ" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*hello ,welcome - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="8, 75, 958, 465" Guid="e595a3c8-c893-45ad-aac3-995b0b631aba" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA74AAAHRCAYAAABNQ2WnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA3KSURBVHhe7d3dcZtKAIDR200KcjduRq2oFHeiKxmwAKFYP4ln9OXszHkIhl3WPH2D5Pz369evAwAAAFQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkPRW+b7uPw2ns37d/fp+3wzDd/vB+0/FXVNoLAADAa3gwfKeAG8bT4fu2O5ynm0XhteOvqLQXAACAF/LcR53f90PGeeN7I298AQAAfprw/VHCFwAA4KcJ3x8lfAEAAH7anwvf+XdY9+8b578fc282PnaHt8XPHwvf8RbOY3Pt70xrTGNY62Lu6Z7ne13s49E9nnx37eCW/S7/6Nh83vO60zmf46HnBQAA8Br+TPjujiE4htHmX3r+DMVZ7E31toipe8N3DLN5tH1V4VZYfmda5+Owe5sdH+f82L3Nzj1a7+mZPY4h/fU7m8J6ce0t+53mH8bnc5l+Nptzd7xs2s/jzwsAAOA1/JHwXQTRGFjzUDydtgir8dhpnI/fF77D9etzZ28yH3nzO97U8l7H9dfzHc+dn/f4HrfnX+9v/e/J5n6nhTej+3TqdOzo4ecFAADwGv78d3wvQmr1kdnVOJ+3Hbjbxzfefq5/djHPLcZrt960Hnd1fhN8uqeN+7kyfrvH8ff1+6C8c79bz+VoOLz6vTz8vAAAAF7DXwvfr0j7/Pfq48Ob7gjf9RoL0/m3rHlpeIM6u/a4x/37EINf0Xdaf772M3u8EqkL9+73mfC9eS8AAACv4YfC9zLCLt0RvuO62yE4Bd6D8bYIwdPaw7rzaHzfr+Z+Zo/jXn77JvXe/Y7nPx6+t+wFAADgNfz98J0+Orv1h5GO15+vvSN8pzUuzj25Ns+tZtcf7+8rCMe9fux2h/3FXp7Y42/3Mrp3v1vP5Wg4vJpjnPsc3rfuBQAA4DX8QPhOYXYcF9+dnb85vRas28fHpWfBNll9LPkR0+SLNccgPI7LuZ/Z4+za9RvdWWjetd+t53I0HP4ufG/dCwAAwGv4gfCdHVuNZcRtB+714+cQna//eUtbbysXznF3GZIn49yrEB2+/7u+j9Eze5yqdj0uwnMY3+53nG+9t+Hwdvje/7wAAABew8Phe9Fqx3D6+q91pnEl3E5jGVHLn53GEHfXjk9mbyfHcVuczefdDtmL7/GenIJw/VZ24ZE9jtaxuRnv3+93+xlsr/348wIAAHgdz73xDXjfX3mDCwAAQMK/Hb5vu8Pem0wAAIC0fzR8x48Mb36cGAAAgJJ//qPOAAAAtAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIE34AgAAkCZ8AQAASBO+AAAApAlfAAAA0oQvAAAAacIXAACANOELAABAmvAFAAAgTfgCAACQJnwBAABIE74AAACkCV8AAADShC8AAABpwhcAAIA04QsAAECa8AUAACBN+AIAAJAmfAEAAEgTvgAAAKQJXwAAANKELwAAAGnCFwAAgDThCwAAQJrwBQAAIOzX4X9/FCyWamZkWwAAAABJRU5ErkJggg==" SearchSteps="Image" TargetType="ImageBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Edit''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,279" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="55895c2f-1130-4df5-b463-33ec260e9916" Text="hehe" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" ContentHash="j6gJ1MGoBkytmepMZzdeJw" CvTextArea="20, 90, 130, 20" CvTextArgument="hello ,welcome" CvType="Text" DesignTimeRectangle="6, 73, 1924, 937" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="2d2e0f3b-7eeb-4f61-9c9b-9d62407eaf64" InformativeScreenshot="fc8f85403507389f37ff4217cbd47a49.png" Reference="6YU48RMUAUGQL_sulEpGdQ/ItvanURtUEeG2nupeNrEQA" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome to rpa lab - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="9a337d2a-4427-41d2-9f76-39148109d830" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" ContentHash="6UiaaPMn8kOvxdu3ZEGPnw" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO6SURBVFhHrZRHU1RBFIXZWCLzcwxVblWQDCJm0UFFgqBIGAUF/A8uwCrdsDIVkpRkIAmSw+QBkTSBYUgK6+vt7tc9702gB8euOvWqevG+c85998Xsdw6VPtejgDyVq6juDnyUF1ApV1HdRXTqHHt6FNTad8ULiKqtv6HKsqO5Mxi3oNK4qbl7OO2D0ql1zV3xxBrcG/dA0ZhH3katfQ9qEF5j+wMZLVP0BenNk1Bl3oHH5m1IbZqgdylN41AxuwnlsxuQ9H6M3iW+G4UHCL8/6YWEtyP0Lv7NCAGj3FA46pa3UWPbhacIf4KJqy0s9WOEPzJtg8FEEm8p4E0om9lgiVEE/GCSwUswcfG4SE3BBaMuyB9xyQ0EgTG1AeEcTOEILptW4ASspC6Z8IYAuyn47g8nlYIJfwiY101TK3MWYJ46EOyfs6i7AMH5IwycN7wKd1AKJvzRgnndajCrWwsOSE3BLHXesJOCbw+twK3vK3ID+82Zpo5gzhSMEmAKX4bcwWW5AU3dOGedoYF+zf8iXWWDAOsHl+DmwJLcgHbOvqgMxKEBDr4xsAg5/YtyA7zuwDkH1R1uzqhcTK3H1Bx8A8E5fb/gOkrBhD//Omf2kanrVsD9DHytdwGu9v6UGwi1VgzMU6vWaoh/3do587r94AW48u0nXP4agQG+VgRM9pl8SKHmG4niKuvhKoIZfB4ufZmTGwisO1oDDDwPFxF+4bNDboDXrZ7zvnUHzZnXjWAUAzN4do9dbiDU71M65z7tnAmY1M1TZ/c44Hy3HbK6bXIDQWuFv8/AteJgkVozZ3/dFIypsxB+rssGmV1WuYHAfSY/k1DzjURxFfU0NYV3WiGjwyI3EFh3NAaOoAEK7rRAOsLTPpnlBljd8jnztQquW5UYRcEdZkhFeMpHk9yAGsx/nwedMwGTunnqVAQTeHK7UW4g1O8zeK0YmKwV/7r9qdVglpqAk1CJbbNyA36wdq0YWJU6CKzUTcBK3cntJgE+2zoLCa0zcgMc7K/74HMWqRGciOCzCE5omYH4lmm5gUjnTOFh5pzUxlP7wWeap+H0hym5gSbzYkDdB58zr1sNPoVqHIvgRzQ3NwdEDoeDym63B8lmswlZrVYhi8UiZDabqUwmk5DRGMEWvH6mB5/PR7W+vk7l9XqF1tbWqDwej5Db7RZyuVxCTqeTanV1lep1XY7cwP0TsVB07DAUKMo/Gp3IOwpRxcdjofxkrNzAq3Rd/ovUOGhI+X8i73uZpoPGTF2eglFOTMxfgOYUr6FIl+IAAAAASUVORK5CYII=" InformativeScreenshot="54bf84548d95895bca26ea226acab180.png" Reference="6YU48RMUAUGQL_sulEpGdQ/pjnLjWJOb0agwtKSxxi0Yg" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,579" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" IsDisplayNameAuto="True" ScopeGuid="d6e35268-4d79-4a62-a02f-0995ba0f2a2b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Right-click ''Edit''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="d6e35268-4d79-4a62-a02f-0995ba0f2a2b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" ContentHash="j6gJ1MGoBkytmepMZzdeJw" CvTextArea="20, 90, 130, 20" CvTextArgument="hello ,welcome" CvType="Text" DesignTimeRectangle="6, 73, 1924, 937" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="2d2e0f3b-7eeb-4f61-9c9b-9d62407eaf64" InformativeScreenshot="fc8f85403507389f37ff4217cbd47a49.png" Reference="6YU48RMUAUGQL_sulEpGdQ/ItvanURtUEeG2nupeNrEQA" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome to rpa lab - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="9a337d2a-4427-41d2-9f76-39148109d830" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" ContentHash="6UiaaPMn8kOvxdu3ZEGPnw" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO6SURBVFhHrZRHU1RBFIXZWCLzcwxVblWQDCJm0UFFgqBIGAUF/A8uwCrdsDIVkpRkIAmSw+QBkTSBYUgK6+vt7tc9702gB8euOvWqevG+c85998Xsdw6VPtejgDyVq6juDnyUF1ApV1HdRXTqHHt6FNTad8ULiKqtv6HKsqO5Mxi3oNK4qbl7OO2D0ql1zV3xxBrcG/dA0ZhH3katfQ9qEF5j+wMZLVP0BenNk1Bl3oHH5m1IbZqgdylN41AxuwnlsxuQ9H6M3iW+G4UHCL8/6YWEtyP0Lv7NCAGj3FA46pa3UWPbhacIf4KJqy0s9WOEPzJtg8FEEm8p4E0om9lgiVEE/GCSwUswcfG4SE3BBaMuyB9xyQ0EgTG1AeEcTOEILptW4ASspC6Z8IYAuyn47g8nlYIJfwiY101TK3MWYJ46EOyfs6i7AMH5IwycN7wKd1AKJvzRgnndajCrWwsOSE3BLHXesJOCbw+twK3vK3ID+82Zpo5gzhSMEmAKX4bcwWW5AU3dOGedoYF+zf8iXWWDAOsHl+DmwJLcgHbOvqgMxKEBDr4xsAg5/YtyA7zuwDkH1R1uzqhcTK3H1Bx8A8E5fb/gOkrBhD//Omf2kanrVsD9DHytdwGu9v6UGwi1VgzMU6vWaoh/3do587r94AW48u0nXP4agQG+VgRM9pl8SKHmG4niKuvhKoIZfB4ufZmTGwisO1oDDDwPFxF+4bNDboDXrZ7zvnUHzZnXjWAUAzN4do9dbiDU71M65z7tnAmY1M1TZ/c44Hy3HbK6bXIDQWuFv8/AteJgkVozZ3/dFIypsxB+rssGmV1WuYHAfSY/k1DzjURxFfU0NYV3WiGjwyI3EFh3NAaOoAEK7rRAOsLTPpnlBljd8jnztQquW5UYRcEdZkhFeMpHk9yAGsx/nwedMwGTunnqVAQTeHK7UW4g1O8zeK0YmKwV/7r9qdVglpqAk1CJbbNyA36wdq0YWJU6CKzUTcBK3cntJgE+2zoLCa0zcgMc7K/74HMWqRGciOCzCE5omYH4lmm5gUjnTOFh5pzUxlP7wWeap+H0hym5gSbzYkDdB58zr1sNPoVqHIvgRzQ3NwdEDoeDym63B8lmswlZrVYhi8UiZDabqUwmk5DRGMEWvH6mB5/PR7W+vk7l9XqF1tbWqDwej5Db7RZyuVxCTqeTanV1lep1XY7cwP0TsVB07DAUKMo/Gp3IOwpRxcdjofxkrNzAq3Rd/ovUOGhI+X8i73uZpoPGTF2eglFOTMxfgOYUr6FIl+IAAAAASUVORK5CYII=" InformativeScreenshot="54bf84548d95895bca26ea226acab180.png" Reference="6YU48RMUAUGQL_sulEpGdQ/pjnLjWJOb0agwtKSxxi0Yg" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,579" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" IsDisplayNameAuto="True" ScopeGuid="b4016c1b-0f50-4741-af4d-1b32ad3e829a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Right-click ''Edit''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="b4016c1b-0f50-4741-af4d-1b32ad3e829a" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" ContentHash="j6gJ1MGoBkytmepMZzdeJw" CvTextArea="20, 90, 130, 20" CvTextArgument="hello ,welcome" CvType="Text" DesignTimeRectangle="6, 73, 1924, 937" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="2d2e0f3b-7eeb-4f61-9c9b-9d62407eaf64" InformativeScreenshot="fc8f85403507389f37ff4217cbd47a49.png" Reference="6YU48RMUAUGQL_sulEpGdQ/ItvanURtUEeG2nupeNrEQA" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome to rpa lab - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="9a337d2a-4427-41d2-9f76-39148109d830" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" ContentHash="6UiaaPMn8kOvxdu3ZEGPnw" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO6SURBVFhHrZRHU1RBFIXZWCLzcwxVblWQDCJm0UFFgqBIGAUF/A8uwCrdsDIVkpRkIAmSw+QBkTSBYUgK6+vt7tc9702gB8euOvWqevG+c85998Xsdw6VPtejgDyVq6juDnyUF1ApV1HdRXTqHHt6FNTad8ULiKqtv6HKsqO5Mxi3oNK4qbl7OO2D0ql1zV3xxBrcG/dA0ZhH3katfQ9qEF5j+wMZLVP0BenNk1Bl3oHH5m1IbZqgdylN41AxuwnlsxuQ9H6M3iW+G4UHCL8/6YWEtyP0Lv7NCAGj3FA46pa3UWPbhacIf4KJqy0s9WOEPzJtg8FEEm8p4E0om9lgiVEE/GCSwUswcfG4SE3BBaMuyB9xyQ0EgTG1AeEcTOEILptW4ASspC6Z8IYAuyn47g8nlYIJfwiY101TK3MWYJ46EOyfs6i7AMH5IwycN7wKd1AKJvzRgnndajCrWwsOSE3BLHXesJOCbw+twK3vK3ID+82Zpo5gzhSMEmAKX4bcwWW5AU3dOGedoYF+zf8iXWWDAOsHl+DmwJLcgHbOvqgMxKEBDr4xsAg5/YtyA7zuwDkH1R1uzqhcTK3H1Bx8A8E5fb/gOkrBhD//Omf2kanrVsD9DHytdwGu9v6UGwi1VgzMU6vWaoh/3do587r94AW48u0nXP4agQG+VgRM9pl8SKHmG4niKuvhKoIZfB4ufZmTGwisO1oDDDwPFxF+4bNDboDXrZ7zvnUHzZnXjWAUAzN4do9dbiDU71M65z7tnAmY1M1TZ/c44Hy3HbK6bXIDQWuFv8/AteJgkVozZ3/dFIypsxB+rssGmV1WuYHAfSY/k1DzjURxFfU0NYV3WiGjwyI3EFh3NAaOoAEK7rRAOsLTPpnlBljd8jnztQquW5UYRcEdZkhFeMpHk9yAGsx/nwedMwGTunnqVAQTeHK7UW4g1O8zeK0YmKwV/7r9qdVglpqAk1CJbbNyA36wdq0YWJU6CKzUTcBK3cntJgE+2zoLCa0zcgMc7K/74HMWqRGciOCzCE5omYH4lmm5gUjnTOFh5pzUxlP7wWeap+H0hym5gSbzYkDdB58zr1sNPoVqHIvgRzQ3NwdEDoeDym63B8lmswlZrVYhi8UiZDabqUwmk5DRGMEWvH6mB5/PR7W+vk7l9XqF1tbWqDwej5Db7RZyuVxCTqeTanV1lep1XY7cwP0TsVB07DAUKMo/Gp3IOwpRxcdjofxkrNzAq3Rd/ovUOGhI+X8i73uZpoPGTF2eglFOTMxfgOYUr6FIl+IAAAAASUVORK5CYII=" InformativeScreenshot="54bf84548d95895bca26ea226acab180.png" Reference="6YU48RMUAUGQL_sulEpGdQ/pjnLjWJOb0agwtKSxxi0Yg" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,579" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" IsDisplayNameAuto="True" ScopeGuid="a2077206-54ff-40ce-a340-d88b198bd743" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Right-click ''Edit''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="a2077206-54ff-40ce-a340-d88b198bd743" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" ContentHash="j6gJ1MGoBkytmepMZzdeJw" CvTextArea="20, 90, 130, 20" CvTextArgument="hello ,welcome" CvType="Text" DesignTimeRectangle="6, 73, 1924, 937" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="2d2e0f3b-7eeb-4f61-9c9b-9d62407eaf64" InformativeScreenshot="fc8f85403507389f37ff4217cbd47a49.png" Reference="6YU48RMUAUGQL_sulEpGdQ/ItvanURtUEeG2nupeNrEQA" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome to rpa lab - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="9a337d2a-4427-41d2-9f76-39148109d830" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" ContentHash="6UiaaPMn8kOvxdu3ZEGPnw" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO6SURBVFhHrZRHU1RBFIXZWCLzcwxVblWQDCJm0UFFgqBIGAUF/A8uwCrdsDIVkpRkIAmSw+QBkTSBYUgK6+vt7tc9702gB8euOvWqevG+c85998Xsdw6VPtejgDyVq6juDnyUF1ApV1HdRXTqHHt6FNTad8ULiKqtv6HKsqO5Mxi3oNK4qbl7OO2D0ql1zV3xxBrcG/dA0ZhH3katfQ9qEF5j+wMZLVP0BenNk1Bl3oHH5m1IbZqgdylN41AxuwnlsxuQ9H6M3iW+G4UHCL8/6YWEtyP0Lv7NCAGj3FA46pa3UWPbhacIf4KJqy0s9WOEPzJtg8FEEm8p4E0om9lgiVEE/GCSwUswcfG4SE3BBaMuyB9xyQ0EgTG1AeEcTOEILptW4ASspC6Z8IYAuyn47g8nlYIJfwiY101TK3MWYJ46EOyfs6i7AMH5IwycN7wKd1AKJvzRgnndajCrWwsOSE3BLHXesJOCbw+twK3vK3ID+82Zpo5gzhSMEmAKX4bcwWW5AU3dOGedoYF+zf8iXWWDAOsHl+DmwJLcgHbOvqgMxKEBDr4xsAg5/YtyA7zuwDkH1R1uzqhcTK3H1Bx8A8E5fb/gOkrBhD//Omf2kanrVsD9DHytdwGu9v6UGwi1VgzMU6vWaoh/3do587r94AW48u0nXP4agQG+VgRM9pl8SKHmG4niKuvhKoIZfB4ufZmTGwisO1oDDDwPFxF+4bNDboDXrZ7zvnUHzZnXjWAUAzN4do9dbiDU71M65z7tnAmY1M1TZ/c44Hy3HbK6bXIDQWuFv8/AteJgkVozZ3/dFIypsxB+rssGmV1WuYHAfSY/k1DzjURxFfU0NYV3WiGjwyI3EFh3NAaOoAEK7rRAOsLTPpnlBljd8jnztQquW5UYRcEdZkhFeMpHk9yAGsx/nwedMwGTunnqVAQTeHK7UW4g1O8zeK0YmKwV/7r9qdVglpqAk1CJbbNyA36wdq0YWJU6CKzUTcBK3cntJgE+2zoLCa0zcgMc7K/74HMWqRGciOCzCE5omYH4lmm5gUjnTOFh5pzUxlP7wWeap+H0hym5gSbzYkDdB58zr1sNPoVqHIvgRzQ3NwdEDoeDym63B8lmswlZrVYhi8UiZDabqUwmk5DRGMEWvH6mB5/PR7W+vk7l9XqF1tbWqDwej5Db7RZyuVxCTqeTanV1lep1XY7cwP0TsVB07DAUKMo/Gp3IOwpRxcdjofxkrNzAq3Rd/ovUOGhI+X8i73uZpoPGTF2eglFOTMxfgOYUr6FIl+IAAAAASUVORK5CYII=" InformativeScreenshot="54bf84548d95895bca26ea226acab180.png" Reference="6YU48RMUAUGQL_sulEpGdQ/pjnLjWJOb0agwtKSxxi0Yg" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,640" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" IsDisplayNameAuto="True" ScopeGuid="d3047cde-23fc-4f56-a6be-e66dbe10dabb" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,341" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Edit''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,279" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="d3047cde-23fc-4f56-a6be-e66dbe10dabb" Text="welcome to rpa lab, " Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" ContentHash="j6gJ1MGoBkytmepMZzdeJw" CvTextArea="20, 90, 130, 20" CvTextArgument="hello ,welcome" CvType="Text" DesignTimeRectangle="6, 73, 1924, 937" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="2d2e0f3b-7eeb-4f61-9c9b-9d62407eaf64" InformativeScreenshot="fc8f85403507389f37ff4217cbd47a49.png" Reference="6YU48RMUAUGQL_sulEpGdQ/ItvanURtUEeG2nupeNrEQA" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome to rpa lab - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="9a337d2a-4427-41d2-9f76-39148109d830" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" ContentHash="6UiaaPMn8kOvxdu3ZEGPnw" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO6SURBVFhHrZRHU1RBFIXZWCLzcwxVblWQDCJm0UFFgqBIGAUF/A8uwCrdsDIVkpRkIAmSw+QBkTSBYUgK6+vt7tc9702gB8euOvWqevG+c85998Xsdw6VPtejgDyVq6juDnyUF1ApV1HdRXTqHHt6FNTad8ULiKqtv6HKsqO5Mxi3oNK4qbl7OO2D0ql1zV3xxBrcG/dA0ZhH3katfQ9qEF5j+wMZLVP0BenNk1Bl3oHH5m1IbZqgdylN41AxuwnlsxuQ9H6M3iW+G4UHCL8/6YWEtyP0Lv7NCAGj3FA46pa3UWPbhacIf4KJqy0s9WOEPzJtg8FEEm8p4E0om9lgiVEE/GCSwUswcfG4SE3BBaMuyB9xyQ0EgTG1AeEcTOEILptW4ASspC6Z8IYAuyn47g8nlYIJfwiY101TK3MWYJ46EOyfs6i7AMH5IwycN7wKd1AKJvzRgnndajCrWwsOSE3BLHXesJOCbw+twK3vK3ID+82Zpo5gzhSMEmAKX4bcwWW5AU3dOGedoYF+zf8iXWWDAOsHl+DmwJLcgHbOvqgMxKEBDr4xsAg5/YtyA7zuwDkH1R1uzqhcTK3H1Bx8A8E5fb/gOkrBhD//Omf2kanrVsD9DHytdwGu9v6UGwi1VgzMU6vWaoh/3do587r94AW48u0nXP4agQG+VgRM9pl8SKHmG4niKuvhKoIZfB4ufZmTGwisO1oDDDwPFxF+4bNDboDXrZ7zvnUHzZnXjWAUAzN4do9dbiDU71M65z7tnAmY1M1TZ/c44Hy3HbK6bXIDQWuFv8/AteJgkVozZ3/dFIypsxB+rssGmV1WuYHAfSY/k1DzjURxFfU0NYV3WiGjwyI3EFh3NAaOoAEK7rRAOsLTPpnlBljd8jnztQquW5UYRcEdZkhFeMpHk9yAGsx/nwedMwGTunnqVAQTeHK7UW4g1O8zeK0YmKwV/7r9qdVglpqAk1CJbbNyA36wdq0YWJU6CKzUTcBK3cntJgE+2zoLCa0zcgMc7K/74HMWqRGciOCzCE5omYH4lmm5gUjnTOFh5pzUxlP7wWeap+H0hym5gSbzYkDdB58zr1sNPoVqHIvgRzQ3NwdEDoeDym63B8lmswlZrVYhi8UiZDabqUwmk5DRGMEWvH6mB5/PR7W+vk7l9XqF1tbWqDwej5Db7RZyuVxCTqeTanV1lep1XY7cwP0TsVB07DAUKMo/Gp3IOwpRxcdjofxkrNzAq3Rd/ovUOGhI+X8i73uZpoPGTF2eglFOTMxfgOYUr6FIl+IAAAAASUVORK5CYII=" InformativeScreenshot="54bf84548d95895bca26ea226acab180.png" Reference="6YU48RMUAUGQL_sulEpGdQ/pjnLjWJOb0agwtKSxxi0Yg" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,579" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" IsDisplayNameAuto="True" ScopeGuid="e5ff33ef-dcaf-4a26-a5fe-cf6a0e2bad12" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Right-click ''Edit''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="e5ff33ef-dcaf-4a26-a5fe-cf6a0e2bad12" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" ContentHash="j6gJ1MGoBkytmepMZzdeJw" CvTextArea="20, 90, 130, 20" CvTextArgument="hello ,welcome" CvType="Text" DesignTimeRectangle="6, 73, 1924, 937" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="2d2e0f3b-7eeb-4f61-9c9b-9d62407eaf64" InformativeScreenshot="fc8f85403507389f37ff4217cbd47a49.png" Reference="6YU48RMUAUGQL_sulEpGdQ/ItvanURtUEeG2nupeNrEQA" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome to rpa lab - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="9a337d2a-4427-41d2-9f76-39148109d830" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" ContentHash="6UiaaPMn8kOvxdu3ZEGPnw" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO6SURBVFhHrZRHU1RBFIXZWCLzcwxVblWQDCJm0UFFgqBIGAUF/A8uwCrdsDIVkpRkIAmSw+QBkTSBYUgK6+vt7tc9702gB8euOvWqevG+c85998Xsdw6VPtejgDyVq6juDnyUF1ApV1HdRXTqHHt6FNTad8ULiKqtv6HKsqO5Mxi3oNK4qbl7OO2D0ql1zV3xxBrcG/dA0ZhH3katfQ9qEF5j+wMZLVP0BenNk1Bl3oHH5m1IbZqgdylN41AxuwnlsxuQ9H6M3iW+G4UHCL8/6YWEtyP0Lv7NCAGj3FA46pa3UWPbhacIf4KJqy0s9WOEPzJtg8FEEm8p4E0om9lgiVEE/GCSwUswcfG4SE3BBaMuyB9xyQ0EgTG1AeEcTOEILptW4ASspC6Z8IYAuyn47g8nlYIJfwiY101TK3MWYJ46EOyfs6i7AMH5IwycN7wKd1AKJvzRgnndajCrWwsOSE3BLHXesJOCbw+twK3vK3ID+82Zpo5gzhSMEmAKX4bcwWW5AU3dOGedoYF+zf8iXWWDAOsHl+DmwJLcgHbOvqgMxKEBDr4xsAg5/YtyA7zuwDkH1R1uzqhcTK3H1Bx8A8E5fb/gOkrBhD//Omf2kanrVsD9DHytdwGu9v6UGwi1VgzMU6vWaoh/3do587r94AW48u0nXP4agQG+VgRM9pl8SKHmG4niKuvhKoIZfB4ufZmTGwisO1oDDDwPFxF+4bNDboDXrZ7zvnUHzZnXjWAUAzN4do9dbiDU71M65z7tnAmY1M1TZ/c44Hy3HbK6bXIDQWuFv8/AteJgkVozZ3/dFIypsxB+rssGmV1WuYHAfSY/k1DzjURxFfU0NYV3WiGjwyI3EFh3NAaOoAEK7rRAOsLTPpnlBljd8jnztQquW5UYRcEdZkhFeMpHk9yAGsx/nwedMwGTunnqVAQTeHK7UW4g1O8zeK0YmKwV/7r9qdVglpqAk1CJbbNyA36wdq0YWJU6CKzUTcBK3cntJgE+2zoLCa0zcgMc7K/74HMWqRGciOCzCE5omYH4lmm5gUjnTOFh5pzUxlP7wWeap+H0hym5gSbzYkDdB58zr1sNPoVqHIvgRzQ3NwdEDoeDym63B8lmswlZrVYhi8UiZDabqUwmk5DRGMEWvH6mB5/PR7W+vk7l9XqF1tbWqDwej5Db7RZyuVxCTqeTanV1lep1XY7cwP0TsVB07DAUKMo/Gp3IOwpRxcdjofxkrNzAq3Rd/ovUOGhI+X8i73uZpoPGTF2eglFOTMxfgOYUr6FIl+IAAAAASUVORK5CYII=" InformativeScreenshot="54bf84548d95895bca26ea226acab180.png" Reference="6YU48RMUAUGQL_sulEpGdQ/pjnLjWJOb0agwtKSxxi0Yg" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,640" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" IsDisplayNameAuto="True" ScopeGuid="79723df1-0aac-4195-bf90-9e8518fbf17d" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,341" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Edit''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,279" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="79723df1-0aac-4195-bf90-9e8518fbf17d" Text="Welcome to rpa lab" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" ContentHash="j6gJ1MGoBkytmepMZzdeJw" CvTextArea="20, 90, 130, 20" CvTextArgument="hello ,welcome" CvType="Text" DesignTimeRectangle="6, 73, 1924, 937" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="2d2e0f3b-7eeb-4f61-9c9b-9d62407eaf64" InformativeScreenshot="fc8f85403507389f37ff4217cbd47a49.png" Reference="6YU48RMUAUGQL_sulEpGdQ/ItvanURtUEeG2nupeNrEQA" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome to rpa lab - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="9a337d2a-4427-41d2-9f76-39148109d830" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" ContentHash="6UiaaPMn8kOvxdu3ZEGPnw" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO6SURBVFhHrZRHU1RBFIXZWCLzcwxVblWQDCJm0UFFgqBIGAUF/A8uwCrdsDIVkpRkIAmSw+QBkTSBYUgK6+vt7tc9702gB8euOvWqevG+c85998Xsdw6VPtejgDyVq6juDnyUF1ApV1HdRXTqHHt6FNTad8ULiKqtv6HKsqO5Mxi3oNK4qbl7OO2D0ql1zV3xxBrcG/dA0ZhH3katfQ9qEF5j+wMZLVP0BenNk1Bl3oHH5m1IbZqgdylN41AxuwnlsxuQ9H6M3iW+G4UHCL8/6YWEtyP0Lv7NCAGj3FA46pa3UWPbhacIf4KJqy0s9WOEPzJtg8FEEm8p4E0om9lgiVEE/GCSwUswcfG4SE3BBaMuyB9xyQ0EgTG1AeEcTOEILptW4ASspC6Z8IYAuyn47g8nlYIJfwiY101TK3MWYJ46EOyfs6i7AMH5IwycN7wKd1AKJvzRgnndajCrWwsOSE3BLHXesJOCbw+twK3vK3ID+82Zpo5gzhSMEmAKX4bcwWW5AU3dOGedoYF+zf8iXWWDAOsHl+DmwJLcgHbOvqgMxKEBDr4xsAg5/YtyA7zuwDkH1R1uzqhcTK3H1Bx8A8E5fb/gOkrBhD//Omf2kanrVsD9DHytdwGu9v6UGwi1VgzMU6vWaoh/3do587r94AW48u0nXP4agQG+VgRM9pl8SKHmG4niKuvhKoIZfB4ufZmTGwisO1oDDDwPFxF+4bNDboDXrZ7zvnUHzZnXjWAUAzN4do9dbiDU71M65z7tnAmY1M1TZ/c44Hy3HbK6bXIDQWuFv8/AteJgkVozZ3/dFIypsxB+rssGmV1WuYHAfSY/k1DzjURxFfU0NYV3WiGjwyI3EFh3NAaOoAEK7rRAOsLTPpnlBljd8jnztQquW5UYRcEdZkhFeMpHk9yAGsx/nwedMwGTunnqVAQTeHK7UW4g1O8zeK0YmKwV/7r9qdVglpqAk1CJbbNyA36wdq0YWJU6CKzUTcBK3cntJgE+2zoLCa0zcgMc7K/74HMWqRGciOCzCE5omYH4lmm5gUjnTOFh5pzUxlP7wWeap+H0hym5gSbzYkDdB58zr1sNPoVqHIvgRzQ3NwdEDoeDym63B8lmswlZrVYhi8UiZDabqUwmk5DRGMEWvH6mB5/PR7W+vk7l9XqF1tbWqDwej5Db7RZyuVxCTqeTanV1lep1XY7cwP0TsVB07DAUKMo/Gp3IOwpRxcdjofxkrNzAq3Rd/ovUOGhI+X8i73uZpoPGTF2eglFOTMxfgOYUr6FIl+IAAAAASUVORK5CYII=" InformativeScreenshot="54bf84548d95895bca26ea226acab180.png" Reference="6YU48RMUAUGQL_sulEpGdQ/pjnLjWJOb0agwtKSxxi0Yg" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,640" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" IsDisplayNameAuto="True" ScopeGuid="cec70832-62f1-4b90-aae4-e5e8cfcd86a7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,341" sap2010:WorkflowViewState.IdRef="Sequence_16">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Edit''" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,279" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="cec70832-62f1-4b90-aae4-e5e8cfcd86a7" Text="welcome cse hehe" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" ContentHash="j6gJ1MGoBkytmepMZzdeJw" CvTextArea="20, 90, 130, 20" CvTextArgument="hello ,welcome" CvType="Text" DesignTimeRectangle="6, 73, 1924, 937" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="2d2e0f3b-7eeb-4f61-9c9b-9d62407eaf64" InformativeScreenshot="fc8f85403507389f37ff4217cbd47a49.png" Reference="6YU48RMUAUGQL_sulEpGdQ/ItvanURtUEeG2nupeNrEQA" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome to rpa lab - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="5d390a47-54a9-4260-8aa9-7552bf952181" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="9a337d2a-4427-41d2-9f76-39148109d830" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" ContentHash="6UiaaPMn8kOvxdu3ZEGPnw" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO6SURBVFhHrZRHU1RBFIXZWCLzcwxVblWQDCJm0UFFgqBIGAUF/A8uwCrdsDIVkpRkIAmSw+QBkTSBYUgK6+vt7tc9702gB8euOvWqevG+c85998Xsdw6VPtejgDyVq6juDnyUF1ApV1HdRXTqHHt6FNTad8ULiKqtv6HKsqO5Mxi3oNK4qbl7OO2D0ql1zV3xxBrcG/dA0ZhH3katfQ9qEF5j+wMZLVP0BenNk1Bl3oHH5m1IbZqgdylN41AxuwnlsxuQ9H6M3iW+G4UHCL8/6YWEtyP0Lv7NCAGj3FA46pa3UWPbhacIf4KJqy0s9WOEPzJtg8FEEm8p4E0om9lgiVEE/GCSwUswcfG4SE3BBaMuyB9xyQ0EgTG1AeEcTOEILptW4ASspC6Z8IYAuyn47g8nlYIJfwiY101TK3MWYJ46EOyfs6i7AMH5IwycN7wKd1AKJvzRgnndajCrWwsOSE3BLHXesJOCbw+twK3vK3ID+82Zpo5gzhSMEmAKX4bcwWW5AU3dOGedoYF+zf8iXWWDAOsHl+DmwJLcgHbOvqgMxKEBDr4xsAg5/YtyA7zuwDkH1R1uzqhcTK3H1Bx8A8E5fb/gOkrBhD//Omf2kanrVsD9DHytdwGu9v6UGwi1VgzMU6vWaoh/3do587r94AW48u0nXP4agQG+VgRM9pl8SKHmG4niKuvhKoIZfB4ufZmTGwisO1oDDDwPFxF+4bNDboDXrZ7zvnUHzZnXjWAUAzN4do9dbiDU71M65z7tnAmY1M1TZ/c44Hy3HbK6bXIDQWuFv8/AteJgkVozZ3/dFIypsxB+rssGmV1WuYHAfSY/k1DzjURxFfU0NYV3WiGjwyI3EFh3NAaOoAEK7rRAOsLTPpnlBljd8jnztQquW5UYRcEdZkhFeMpHk9yAGsx/nwedMwGTunnqVAQTeHK7UW4g1O8zeK0YmKwV/7r9qdVglpqAk1CJbbNyA36wdq0YWJU6CKzUTcBK3cntJgE+2zoLCa0zcgMc7K/74HMWqRGciOCzCE5omYH4lmm5gUjnTOFh5pzUxlP7wWeap+H0hym5gSbzYkDdB58zr1sNPoVqHIvgRzQ3NwdEDoeDym63B8lmswlZrVYhi8UiZDabqUwmk5DRGMEWvH6mB5/PR7W+vk7l9XqF1tbWqDwej5Db7RZyuVxCTqeTanV1lep1XY7cwP0TsVB07DAUKMo/Gp3IOwpRxcdjofxkrNzAq3Rd/ovUOGhI+X8i73uZpoPGTF2eglFOTMxfgOYUr6FIl+IAAAAASUVORK5CYII=" InformativeScreenshot="54bf84548d95895bca26ea226acab180.png" Reference="6YU48RMUAUGQL_sulEpGdQ/pjnLjWJOb0agwtKSxxi0Yg" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: *welcome cse - Notepad" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,3009" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" IsDisplayNameAuto="True" ScopeGuid="fb8252d0-d0f7-49f1-8981-2bbd8e356c21" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2719" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Edit''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fb8252d0-d0f7-49f1-8981-2bbd8e356c21" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="f0b52506-ecdd-4099-9260-acbae63e4487" ContentHash="3oi5uPPHTUqLx5SFKYtZHg" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="52bf52b9-883d-4482-96ce-8d413c664fc5" InformativeScreenshot="babc8542947a2a2e76726c590583c94c.png" Reference="6YU48RMUAUGQL_sulEpGdQ/9y2AbJKVOEumj8KAt8Gttw" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome cse - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Edit''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fb8252d0-d0f7-49f1-8981-2bbd8e356c21" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="f0b52506-ecdd-4099-9260-acbae63e4487" ContentHash="3oi5uPPHTUqLx5SFKYtZHg" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="52bf52b9-883d-4482-96ce-8d413c664fc5" InformativeScreenshot="babc8542947a2a2e76726c590583c94c.png" Reference="6YU48RMUAUGQL_sulEpGdQ/9y2AbJKVOEumj8KAt8Gttw" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome cse - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text ''Font''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="fb8252d0-d0f7-49f1-8981-2bbd8e356c21" TextString="[String]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CVScreenId="1797bc8a-a10b-4db9-9f01-4bfccca2c200" ContentHash="VkahtGaKxUO_8DIuXG7kBA" CvTextArea="25, 423, 30, 13" CvType="AnyWordGroup" DesignTimeRectangle="26, 420, 130, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Font' role='menu item' /&gt;&lt;ctrl automationid='TextBlock' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Font' role='menu item' /&gt;&lt;ctrl automationid='TextBlock' role='text' /&gt;" Guid="3fb44e72-023b-44b0-b156-fe812f443a18" InformativeScreenshot="5f217b02dded3ad4bd004873d4c07e06.png" Reference="6YU48RMUAUGQL_sulEpGdQ/gzOfFDWiFUCo4_WVkCenDw" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='PopupHost' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Edit''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fb8252d0-d0f7-49f1-8981-2bbd8e356c21" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="f0b52506-ecdd-4099-9260-acbae63e4487" ContentHash="3oi5uPPHTUqLx5SFKYtZHg" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="52bf52b9-883d-4482-96ce-8d413c664fc5" InformativeScreenshot="babc8542947a2a2e76726c590583c94c.png" Reference="6YU48RMUAUGQL_sulEpGdQ/9y2AbJKVOEumj8KAt8Gttw" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome cse - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Right-click ''Font''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="fb8252d0-d0f7-49f1-8981-2bbd8e356c21" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="1797bc8a-a10b-4db9-9f01-4bfccca2c200" ContentHash="VkahtGaKxUO_8DIuXG7kBA" CvTextArea="25, 423, 30, 13" CvType="AnyWordGroup" DesignTimeRectangle="26, 420, 130, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Font' role='menu item' /&gt;&lt;ctrl automationid='TextBlock' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Font' role='menu item' /&gt;&lt;ctrl automationid='TextBlock' role='text' /&gt;" Guid="3fb44e72-023b-44b0-b156-fe812f443a18" InformativeScreenshot="5f217b02dded3ad4bd004873d4c07e06.png" Reference="6YU48RMUAUGQL_sulEpGdQ/gzOfFDWiFUCo4_WVkCenDw" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='PopupHost' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Edit''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fb8252d0-d0f7-49f1-8981-2bbd8e356c21" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="f0b52506-ecdd-4099-9260-acbae63e4487" ContentHash="3oi5uPPHTUqLx5SFKYtZHg" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="52bf52b9-883d-4482-96ce-8d413c664fc5" InformativeScreenshot="babc8542947a2a2e76726c590583c94c.png" Reference="6YU48RMUAUGQL_sulEpGdQ/9y2AbJKVOEumj8KAt8Gttw" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome cse - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Edit''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fb8252d0-d0f7-49f1-8981-2bbd8e356c21" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="f0b52506-ecdd-4099-9260-acbae63e4487" ContentHash="3oi5uPPHTUqLx5SFKYtZHg" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="52bf52b9-883d-4482-96ce-8d413c664fc5" InformativeScreenshot="babc8542947a2a2e76726c590583c94c.png" Reference="6YU48RMUAUGQL_sulEpGdQ/9y2AbJKVOEumj8KAt8Gttw" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome cse - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Select all''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fb8252d0-d0f7-49f1-8981-2bbd8e356c21" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="1797bc8a-a10b-4db9-9f01-4bfccca2c200" ContentHash="T_PVeQwyl0Kar0Pa4K0Fpg" CvTextArea="25, 354, 201, 14" CvTextArgument="Select all Ctrl+A" CvType="Text" DesignTimeRectangle="15, 346, 222, 29" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Select all' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Select all' role='menu item' automationid='' check:text='Select all' /&gt;" Guid="e4db8b81-8042-4a43-81e0-f9f398b74db1" InformativeScreenshot="f36554f124fa8b004493534da2874363.png" Reference="6YU48RMUAUGQL_sulEpGdQ/Wy4ulkbNLEGTdEnANxbiew" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='PopupHost' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Edit''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fb8252d0-d0f7-49f1-8981-2bbd8e356c21" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="f0b52506-ecdd-4099-9260-acbae63e4487" ContentHash="3oi5uPPHTUqLx5SFKYtZHg" CvTextArea="68, 50, 25, 13" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="59, 40, 44, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='MenuBar' role='menu bar' /&gt;&lt;uia cls='Microsoft.UI.Xaml.Controls.MenuBarItem' name='Edit' role='menu item' automationid='' check:fulltext='Edit' /&gt;" Guid="52bf52b9-883d-4482-96ce-8d413c664fc5" InformativeScreenshot="babc8542947a2a2e76726c590583c94c.png" Reference="6YU48RMUAUGQL_sulEpGdQ/9y2AbJKVOEumj8KAt8Gttw" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome cse - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Font''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fb8252d0-d0f7-49f1-8981-2bbd8e356c21" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="1797bc8a-a10b-4db9-9f01-4bfccca2c200" ContentHash="8GL2PzhqwU-SgDbzY37VFA" CvTextArea="25, 423, 30, 13" CvTextArgument="Font" CvType="Text" DesignTimeRectangle="15, 415, 222, 29" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Font' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Font' role='menu item' automationid='' check:text='Font' /&gt;" Guid="f8bb5061-fb36-466d-b62e-c588c100cf31" InformativeScreenshot="94c026d9f8cef61afddae17912a57353.png" Reference="6YU48RMUAUGQL_sulEpGdQ/p7m5nFxsq0-f1moN_UhsSw" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='PopupHost' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Back''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fb8252d0-d0f7-49f1-8981-2bbd8e356c21" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="64694a79-111e-48d5-92dd-bb9aaa74ffb9" ContentHash="atRHHbYaWkaiYIfS45S-kw" CvElementArea="13, 9, 278, 32" CvType="Button" DesignTimeRectangle="11, 12, 30, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;uia automationid='Button' cls='Button' name='Back' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Button' cls='Button' name='Back' role='button' check:fulltext='Back' /&gt;" Guid="de81eec1-06ed-4747-a887-636b20036c81" InformativeScreenshot="6b996c575b015efea4888c5cd26fd751.png" Reference="6YU48RMUAUGQL_sulEpGdQ/CKPmFRgtL0SF0EoGj-mRKw" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome cse - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Back''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fb8252d0-d0f7-49f1-8981-2bbd8e356c21" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="64694a79-111e-48d5-92dd-bb9aaa74ffb9" ContentHash="atRHHbYaWkaiYIfS45S-kw" CvElementArea="13, 9, 278, 32" CvType="Button" DesignTimeRectangle="11, 12, 30, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;uia automationid='Button' cls='Button' name='Back' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Button' cls='Button' name='Back' role='button' check:fulltext='Back' /&gt;" Guid="de81eec1-06ed-4747-a887-636b20036c81" InformativeScreenshot="6b996c575b015efea4888c5cd26fd751.png" Reference="6YU48RMUAUGQL_sulEpGdQ/CKPmFRgtL0SF0EoGj-mRKw" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome cse - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" ContentHash="dfdGM2wNBEaLkCXKnCCx-A" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO6SURBVFhHrZRHU1RBFIXZWCLzcwxVblWQDCJm0UFFgqBIGAUF/A8uwCrdsDIVkpRkIAmSw+QBkTSBYUgK6+vt7tc9702gB8euOvWqevG+c85998Xsdw6VPtejgDyVq6juDnyUF1ApV1HdRXTqHHt6FNTad8ULiKqtv6HKsqO5Mxi3oNK4qbl7OO2D0ql1zV3xxBrcG/dA0ZhH3katfQ9qEF5j+wMZLVP0BenNk1Bl3oHH5m1IbZqgdylN41AxuwnlsxuQ9H6M3iW+G4UHCL8/6YWEtyP0Lv7NCAGj3FA46pa3UWPbhacIf4KJqy0s9WOEPzJtg8FEEm8p4E0om9lgiVEE/GCSwUswcfG4SE3BBaMuyB9xyQ0EgTG1AeEcTOEILptW4ASspC6Z8IYAuyn47g8nlYIJfwiY101TK3MWYJ46EOyfs6i7AMH5IwycN7wKd1AKJvzRgnndajCrWwsOSE3BLHXesJOCbw+twK3vK3ID+82Zpo5gzhSMEmAKX4bcwWW5AU3dOGedoYF+zf8iXWWDAOsHl+DmwJLcgHbOvqgMxKEBDr4xsAg5/YtyA7zuwDkH1R1uzqhcTK3H1Bx8A8E5fb/gOkrBhD//Omf2kanrVsD9DHytdwGu9v6UGwi1VgzMU6vWaoh/3do587r94AW48u0nXP4agQG+VgRM9pl8SKHmG4niKuvhKoIZfB4ufZmTGwisO1oDDDwPFxF+4bNDboDXrZ7zvnUHzZnXjWAUAzN4do9dbiDU71M65z7tnAmY1M1TZ/c44Hy3HbK6bXIDQWuFv8/AteJgkVozZ3/dFIypsxB+rssGmV1WuYHAfSY/k1DzjURxFfU0NYV3WiGjwyI3EFh3NAaOoAEK7rRAOsLTPpnlBljd8jnztQquW5UYRcEdZkhFeMpHk9yAGsx/nwedMwGTunnqVAQTeHK7UW4g1O8zeK0YmKwV/7r9qdVglpqAk1CJbbNyA36wdq0YWJU6CKzUTcBK3cntJgE+2zoLCa0zcgMc7K/74HMWqRGciOCzCE5omYH4lmm5gUjnTOFh5pzUxlP7wWeap+H0hym5gSbzYkDdB58zr1sNPoVqHIvgRzQ3NwdEDoeDym63B8lmswlZrVYhi8UiZDabqUwmk5DRGMEWvH6mB5/PR7W+vk7l9XqF1tbWqDwej5Db7RZyuVxCTqeTanV1lep1XY7cwP0TsVB07DAUKMo/Gp3IOwpRxcdjofxkrNzAq3Rd/ovUOGhI+X8i73uZpoPGTF2eglFOTMxfgOYUr6FIl+IAAAAASUVORK5CYII=" InformativeScreenshot="3d2c464494c085186d52bbbce6e92a49.png" Reference="6YU48RMUAUGQL_sulEpGdQ/k9JZq23DREOM01BxJnkLuQ" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*welcome cse - Notepad' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
