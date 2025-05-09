@@ -87,32 +87,46 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1276,741" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="892.0000000000001,948.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Delay Duration="00:00:00.0100000" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,117" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Dr.Arockia Jesu Prabhu,Your Account has been hacked in &quot;]" />
-    <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;&amp;quot;Dr.A&lt;/SPAN&gt;&lt;SPAN&gt;NR&lt;/SPAN&gt;&lt;SPAN&gt;,Your Account has been hacked&lt;/SPAN&gt;&lt;SPAN&gt; by cyber criminal department&lt;/SPAN&gt;&lt;SPAN&gt; &lt;/SPAN&gt;&lt;SPAN&gt;&amp;quot;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="254e743c-be90-4f16-82c9-12f20f2b4fdc" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,479" sap2010:WorkflowViewState.IdRef="SendEmailConnections_1" Importance="[UiPath.GSuite.Activities.Gmail.Enums.MailImportance.High]" InputType="HTML" SaveAsDraft="False" Subject="Dr.ANR,Your Account has been hacked in " To="[New String() {&quot;nageswararao.a@cmritonline.ac.in&quot;}]" UseConnectionService="True">
-      <uga:SendEmailConnections.Attachments>
-        <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)" />
-      </uga:SendEmailConnections.Attachments>
-      <uga:SendEmailConnections.AttachmentsBackup>
-        <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
-          <usau:BackupSlot.BackupValues>
-            <scg:Dictionary x:TypeArguments="ugage:AttachmentInputMode, scg:List(x:Object)" />
-          </usau:BackupSlot.BackupValues>
-        </usau:BackupSlot>
-      </uga:SendEmailConnections.AttachmentsBackup>
-      <uga:SendEmailConnections.InputTypeBackup>
-        <usau:BackupSlot x:TypeArguments="ugage:BodyInputType" StoredValue="HTML">
-          <usau:BackupSlot.BackupValues>
-            <scg:Dictionary x:TypeArguments="ugage:BodyInputType, scg:List(x:Object)" />
-          </usau:BackupSlot.BackupValues>
-        </usau:BackupSlot>
-      </uga:SendEmailConnections.InputTypeBackup>
-    </uga:SendEmailConnections>
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="417.6,925.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+      <ui:InterruptibleWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,804" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Delay Duration="00:00:40" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382.4,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Dr.Arockia Jesu Prabhu,Your Account has been hacked in &quot;]" />
+          <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;&amp;quot;Dr.A&lt;/SPAN&gt;&lt;SPAN&gt;NR&lt;/SPAN&gt;&lt;SPAN&gt;,Your Account has been hacked&lt;/SPAN&gt;&lt;SPAN&gt; by cyber criminal department&lt;/SPAN&gt;&lt;SPAN&gt; &lt;/SPAN&gt;&lt;SPAN&gt;&amp;quot;&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&amp;quot;heloo&amp;quot;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="4dbff13c-0ae3-4b1f-a427-aa2c3b04feb2" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,504" sap2010:WorkflowViewState.IdRef="SendEmailConnections_1" Importance="[UiPath.GSuite.Activities.Gmail.Enums.MailImportance.High]" InputType="HTML" SaveAsDraft="False" Subject="Dr.ANR,Your Account has been hacked in " To="[New String(){&quot;tkiturn@gmail.com&quot;}]" UseConnectionService="True">
+            <uga:SendEmailConnections.Attachments>
+              <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)" />
+            </uga:SendEmailConnections.Attachments>
+            <uga:SendEmailConnections.AttachmentsBackup>
+              <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
+                <usau:BackupSlot.BackupValues>
+                  <scg:Dictionary x:TypeArguments="ugage:AttachmentInputMode, scg:List(x:Object)" />
+                </usau:BackupSlot.BackupValues>
+              </usau:BackupSlot>
+            </uga:SendEmailConnections.AttachmentsBackup>
+            <uga:SendEmailConnections.InputTypeBackup>
+              <usau:BackupSlot x:TypeArguments="ugage:BodyInputType" StoredValue="HTML">
+                <usau:BackupSlot.BackupValues>
+                  <scg:Dictionary x:TypeArguments="ugage:BodyInputType, scg:List(x:Object)" />
+                </usau:BackupSlot.BackupValues>
+              </usau:BackupSlot>
+            </uga:SendEmailConnections.InputTypeBackup>
+          </uga:SendEmailConnections>
+        </Sequence>
+      </ui:InterruptibleWhile.Body>
+      <ui:InterruptibleWhile.Condition>
+        <Literal x:TypeArguments="x:Boolean" DisplayName="Literal" Value="True" />
+      </ui:InterruptibleWhile.Condition>
+    </ui:InterruptibleWhile>
   </Sequence>
 </Activity>
